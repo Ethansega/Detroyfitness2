@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/texto_sobrecarga3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="20dp"
+            android:justificationMode="inter_word"
+            android:text="[RUTINA DE INICIACIÓN, LOS DATOS ESTARAN EN FIREBASE]"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/background_toolbar">
+
+
+            <TextView
+                android:id="@+id/textonutricion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/flecha_atras"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="Iniciación"
+                android:textColor="#c2ca3e"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/flecha_atras"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/flechatras"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="Button" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_down">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botonnutricion_img"
+                android:layout_alignRight="@+id/textView"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="150dp"
+                android:text="Nutrición"
+                android:textColor="#c2ca3e"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/botonnutricion_img"
+                app:srcCompat="@drawable/nutricion_boton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/botonEntreno_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="140dp" />
+
+            <Button
+                android:id="@+id/B_nutricion"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@+id/B_entrenamiento"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="140dp"
+                android:background="@android:color/transparent"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botonEntreno_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Entrenamiento"
+                android:textColor="#c2ca3e"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/botonEntreno_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/pesa" />
+
+            <ImageView
+                android:id="@+id/botonperfil_img"
+                app:srcCompat="@drawable/botonp_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/botonEntreno_img"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="12dp" />
+
+
+            <Button
+                android:id="@+id/B_entrenamiento"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botonperfil_img"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="8dp"
+                android:text="Perfil"
+                android:textColor="#c2ca3e"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/B_perfil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/B_entrenamiento"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="140dp"
+                android:background="@android:color/transparent"
+                android:text="" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

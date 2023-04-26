@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "420295823683",
+    "project_id": "detroy-fitness-e203b",
+    "storage_bucket": "detroy-fitness-e203b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420295823683:android:f95b870d2fdd5847f99ff6",
+        "android_client_info": {
+          "package_name": "com.example.detroyfitness2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420295823683-of5ng3muc934b9iu86cjm4125dnr6qrn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJR7LWkZvFYLxVPjqVWXqIr5xeTUavUrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420295823683-of5ng3muc934b9iu86cjm4125dnr6qrn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

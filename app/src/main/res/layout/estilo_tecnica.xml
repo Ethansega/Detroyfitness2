@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Un Layout principal pero amb height Wrap, es a dir, que el seu tamany no es tota l'activitat sino únicament fins al tamany dels elements que hi ha a dins seu. -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <!-- Creem un relativeLayout amb height Wrap i les mesures del seu pare. Amb els bias estem obligant que el layout sempre estigu ubicat a d'alt de tot. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <!-- Creem un botó amb una amplada fixa de 100dp. Aquesta llargada será el tamany del Layout. El boto tindrá un color transparent. -->
+
+        <Button
+            android:id="@+id/B_tecnica"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@android:color/transparent"
+            />
+
+        <!-- Creem un layout dins que contindrà el text. Aquest te una llargada wrap, es a dir, que el seu tamany s'adaptará als elements de dins seu. Per a fer que el seu layout estigui sempre al centre (alineat) del seu pare hem d'utilitzar el valor centerInParent  -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp">
+
+            <!-- Creem un text pel nom. Com el layout ja está centrat, automaticament el Text també está centrat. -->
+
+            <!-- Creem un text per a l'estat. Li diem amb el layout_below que sempre s'ubiqui sota del text nom. A part, li diem am el alignleft que el seu marge esquerra sigui el mateix que el text del nom -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="900dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@drawable/fitness_2017" />
+
+            <TextView
+                android:id="@+id/nomChat"
+                android:layout_width="300dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="20dp"
+                android:text="[Nombre del ejercicio]"
+                android:textSize="23dp"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

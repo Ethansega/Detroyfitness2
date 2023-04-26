@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+
+        <Button
+            android:id="@+id/buttonvolver_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/B_crearCuenta"
+            android:text="Ya tengo cuenta"
+            android:textSize="10dp"
+            android:layout_marginLeft="220dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_above="@+id/IntroduceUsername_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/B_crearCuenta"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_below="@id/IntroduceconfirmPWD"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#C2CA3E"
+            android:text="CREAR CUENTA" />
+
+        <TextView
+            android:id="@+id/textregistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/IntroduceUsername_registrar"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="20dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/IntroduceUsername_registrar"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_above="@+id/IntroduceEmail"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:inputType="textPersonName"
+            android:hint="Usuario"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/IntroducePWD_registrar"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/referencia"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/IntroduceconfirmPWD"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/IntroducePWD_registrar"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:hint="Confirmar password"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/IntroduceEmail"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_above="@+id/referencia"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:inputType="textPersonName"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/referencia"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:text="" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

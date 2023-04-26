@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/background_toolbar" >
+
+            <ImageView
+                android:id="@+id/foto_perfil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/perfil_img" />
+
+            <TextView
+                android:id="@+id/NombreUsuarioView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/foto_perfil"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="55dp"
+                android:text="NOMBRE USAURIO"
+                android:textColor="@color/white" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/toolbar"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="15dp"
+                android:text="Selecciona tu género:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_sexo"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_sexo"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="15dp"
+                android:text="Fecha de nacimiento:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/fecha_nacimiento"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:hint="ej. 13/04/2022"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textColorLink="#E91E63"
+                />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fecha_nacimiento"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="15dp"
+                android:text="Cuanto mides:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/altura"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:hint="Altura en cm"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altura"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="15dp"
+                android:text="Cuanto pesas:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/peso"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:hint="Peso en KG's"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nivel de actividad fisica:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/peso"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="15dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_ActFis"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/textView8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/circulo_amarillo"
+                android:layout_alignRight="@+id/imageView2"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/spinner_ActFis"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/spinner_ActFis"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/circulo_negro" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/spinner_ActFis"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_marginLeft="80dp"
+                app:srcCompat="@drawable/circulo_negro" />
+
+            <Button
+                android:id="@+id/B_siguiente"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:text="Siguiente"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#C2CA3E"
+                android:background="@drawable/redondeo_botones"/>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_down">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botonnutricion_img"
+                android:layout_alignRight="@+id/textView"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="150dp"
+                android:text="Nutrición"
+                android:textColor="#c2ca3e"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/botonnutricion_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/botonEntreno_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="140dp"
+                app:srcCompat="@drawable/nutricion_boton" />
+
+            <Button
+                android:id="@+id/B_nutricion"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@+id/B_entrenamiento"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="140dp"
+                android:background="@android:color/transparent"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botonEntreno_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Entrenamiento"
+                android:textColor="#c2ca3e"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/botonEntreno_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/pesa" />
+
+            <ImageView
+                android:id="@+id/botonperfil_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/botonEntreno_img"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/botonp_img" />
+
+
+            <Button
+                android:id="@+id/B_entrenamiento"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botonperfil_img"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="8dp"
+                android:text="Perfil"
+                android:textColor="#c2ca3e"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/B_perfil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/B_entrenamiento"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="140dp"
+                android:background="@android:color/transparent"
+                android:text="" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
